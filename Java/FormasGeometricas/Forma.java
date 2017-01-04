@@ -6,7 +6,6 @@ public abstract class Forma {
     
     // Construtor padronizado
     public Forma() {
-        
     }
     
     // Construtor parametrizado
