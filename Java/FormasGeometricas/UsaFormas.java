@@ -1,18 +1,28 @@
 package Aprendizado.FormasGeometricas;
 
-public class UsaFormas {
+import static Aprendizado.FormasGeometricas.Auxiliar.*;
+
+public class UsaFormas{
     public static void main(String... args) {
         Forma c = new Circulo();
         Forma t = new Triangulo();
         Forma r = new Retangulo();
         
-        System.out.println("Areas:");
-        System.out.println("Circulo: "+c.area());
-        System.out.println("Triangulo: "+t.area());
-        System.out.println("Retangulo: "+r.area());
+        printf("Areas:");
+        printf("Circulo: %.1f", c.area());
+        printf("Triangulo: %.1f", t.area());
+        printf("Retangulo: %.1f", r.area());
         
-        System.out.println("\nPerimetro: " + new Retangulo().perimetro());
-        System.out.println("Circunferencia: " + new Circulo().circunferencia());
+        Circulo circ = (Circulo) c;
+        
+        printf("\nArea de Circulo: %.1f", circ.area()); // Autoboxing
+        
+        circ = new Circulo(3);
+        
+        printf("Area de Circulo: %.1f", circ.area()); 
+        
+        printf("\nPerimetro: %.1f" , (double) new Retangulo().perimetro());
+        printf("Circunferencia: %.1f" , (double) new Circulo().circunferencia());
         
     }
 }
