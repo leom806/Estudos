@@ -2,17 +2,16 @@ package Aprendizado.FormasGeometricas;
 
 public abstract class Forma {
     
-    private int dimensoes[];
+    private int[] dimensoes = null;
     
     // Construtor padronizado
     public Forma() {
-        this(1);
+        
     }
     
     // Construtor parametrizado
-    @SuppressWarnings("OverridableMethodCallInConstructor")
-    public Forma(int qntdDimensoes) {
-        setDimensoes(qntdDimensoes);
+    public Forma(int dimensoes) {
+        this.dimensoes = new int[dimensoes];
     }
     
     public void setDimensoes(int qntdDimensoes){
@@ -22,7 +21,7 @@ public abstract class Forma {
     }
     
     public void novaDimensao(int dimensao, int pos) {
-        if (dimensao < 0 && (pos < 0 && pos < dimensoes.length))
+        if (dimensao < 0 && (pos < 0 && pos > dimensoes.length))
             throw new RuntimeException("Dimensao ou posicao invalida");
         this.dimensoes[pos] = dimensao;
     }
@@ -31,6 +30,10 @@ public abstract class Forma {
         if (pos < 0)
             throw new RuntimeException("Posicao invalida");
         return dimensoes[pos];
+    }
+    
+    public int[] getDimensoes() {
+        return dimensoes;
     }
     
     public abstract double area();

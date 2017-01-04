@@ -11,23 +11,27 @@ public final class Circulo extends Forma{
     
     @SuppressWarnings("OverridableMethodCallInConstructor")
     public Circulo(int raio) {
-        this.setRaio(raio);
-        this.setDimensoes(1);
+        super(1);
+        setRaio(raio);        
     }
     
     public void setRaio(int raio) {
         if (raio < 0) 
             throw new RuntimeException("Dimensao invalida");
-        this.novaDimensao(raio, 0);
+        novaDimensao(raio, 0);
     }
     
     public int getRaio() {
-        return this.getDimensao(0);
+        return getDimensao(0);
+    }
+    
+    public double circunferencia() {
+        return 2 * PI * getDimensao(0);  // Uso de constante por import estático
     }
     
     @Override
     public double area() {
-        return 3 * PI * this.getDimensao(0);  // Uso de constante por import estático
+        return PI * Math.pow(getDimensao(0), 2);  // Uso de constante por import estático
     }
     
 }
