@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 245, 245);
+    box-sizing: border-box;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a :hover {
+    background-color: #111;
+}
+
+img{
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    width: 20%;
+}
+
+p, div{
+    text-align: center;
+}
+
+.active {
+    background-color: rgb(17, 65, 127);
+    outline: 1px solid rgb(17, 45, 127);
+}
+
+.radio{
+    float: center;
+}
+
+.max{
+    font-size: 14pt;
+}
+
+.error{
+    color: red;
+    font-size: 14pt;
+}
+
+.user{
+    font-size: 14pt;
+    color: white;
+    display: block;
+    width: 2.5em;
+    text-align: center;
+    line-height: 2.5em; 
+    float: right;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float:left; 
+}
+
+.round{
+    border-radius: 2px;
+}
+
+.center{
+    margin: auto;
+}
+
+.end{
+    display: block;
+    height: 3em;
+    width: 7em;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background-color: #333;
+    margin: auto;
+    line-height: 3em;
+    text-decoration: none;
+}
+
+.end:hover{
+    background-color: black;
+}
+
+.btn{
+    font-weight: bold;
+    cursor: pointer;
+    border: 0;
+    width: 6em;
+    height: 2.5em;
+    background-color: #333;
+    color: white;
+}
+
+.btn:hover{
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #222;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn a:hover{
+    color: #333;
+}
+
+.start{
+    width: 14em;
+}
+
+.text{
+    width: 14em;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    color: #666;
+}
+
+.text :focus{
+    outline-color: black;
+    color: #000;
+}
+
+.vertical{
+    margin-top: 7%;
+}
+
+.table{
+    border: 1px solid rgba(33,33,33,.5);
+    padding: .7em;
+}
+
+.table th{
+    padding: .3em;
+    color: #222;
+}
+
+.table td{
+    color: #444;
+}
+
+.fifth{
+    width: 17.15em;
+    margin: .5em auto;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.actions{
+    width: 5.5em;
+    margin: auto;
+}
+
+.actions ul li{
+    width: 100%;   
+}
+
+.complete{
+    background-color: rgb(17, 127, 65);
+}
+
+@media screen and (max-width: 593px){
+    li a{
+      padding: 10px 8px;
+      font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 498px){
+    li a{
+      padding: 10px 8px;
+      font-size: 11pt;
+    }
+}
+
+@media screen and (max-width: 468px){
+    li a{
+      padding: 10px 5px;
+      font-size: 9pt;
+    }
+}
