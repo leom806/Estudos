@@ -1,3 +1,3 @@
-# Estudos de Linguagens de Programação #
+# Estudos Pessoais #
 
-Repositório de estudos pessoais em teorias e implementações em, futuramente, diversas linguagens.
+Repositório de estudos sobre teorias e implementações em diversas tecnologias de desenvolvimento de sistemas.
