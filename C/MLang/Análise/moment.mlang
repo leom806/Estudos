@@ -1,0 +1,11 @@
+var coco = 1;
+var char = 'a';
+var birl = coco;
+#var flutua = 123,32;
+var DOUBLE = 321.32;
+var aponta = DOUBLE;
+var hello = "Hello World!";
+var ptr_he = hello;
+read coco;
+print "BIRL!!!";
+print coco; 
